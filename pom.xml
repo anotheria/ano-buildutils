@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.anotheria</groupId>
 	<artifactId>ano-buildutils</artifactId>
-	<version>4-SNAPSHOT</version>
+	<version>4</version>
 	<name>supporting build utils</name>
 	
 	<parent>
