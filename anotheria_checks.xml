@@ -81,11 +81,8 @@
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="JavadocMethod">
         	<property name="allowMissingParamTags" value="true"/>
-        	<property name="allowMissingThrowsTags" value="true"/>
         	<property name="allowMissingReturnTag" value="false"/>
-        	<property name="allowMissingPropertyJavadoc" value="true"/>
          	<property name="severity" value="warning"/>
-		    <property name="scope" value="protected"/>
         </module>
         <module name="JavadocType"/>
         <module name="JavadocVariable"/>
@@ -93,6 +90,10 @@
          	<property name="severity" value="warning"/>
         </module>
 
+		<module name="MissingJavadocMethodCheck">
+		  <property name="allowMissingPropertyJavadoc" value="true"/>
+		  <property name="scope" value="protected"/>
+		</module>
 
         <!-- Checks for Naming Conventions.                  -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
