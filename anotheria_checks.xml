@@ -93,6 +93,7 @@
 		<module name="MissingJavadocMethodCheck">
 		  <property name="allowMissingPropertyJavadoc" value="true"/>
 		  <property name="scope" value="protected"/>
+       	<property name="severity" value="warning"/>
 		</module>
 
         <!-- Checks for Naming Conventions.                  -->
