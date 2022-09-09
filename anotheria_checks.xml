@@ -263,20 +263,21 @@
             <property name="severity" value="error" />
             <property name="illegalClassNames" value="java.lang.Throwable, java.lang.Error" />
         </module>
-
-    </module>
-
-    <!-- Ermöglichen, dass Checkstylewarnungen abgeschaltet werden -->
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="CHECKSTYLE\:\s*OFF\s*"/>
-	    <property name="onCommentFormat" value="CHECKSTYLE\:\s*ON\s*"/>
-     </module>
-
-    <!-- Allow to disable certain checks -->
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="CSOFF\:\s*(\S+)\s*"/>
-	    <property name="onCommentFormat" value="CSON\:\s*(\S+)\s*"/>
-	    <property name="checkFormat" value="$1"/>
+		
+		<module name="SuppressionCommentFilter">
+		  <property name="offCommentFormat" value="BEGIN GENERATED CODE"/>
+		  <property name="onCommentFormat" value="END GENERATED CODE"/>
+		</module>
+	    <module name="SuppressionCommentFilter">
+	        <property name="offCommentFormat" value="CHECKSTYLE\:\s*OFF\s*"/>
+		    <property name="onCommentFormat" value="CHECKSTYLE\:\s*ON\s*"/>
+	     </module>
+	     <module name="SuppressionCommentFilter">
+	         <property name="offCommentFormat" value="CSOFF\:\s*(\S+)\s*"/>
+	 	    <property name="onCommentFormat" value="CSON\:\s*(\S+)\s*"/>
+	 	    <property name="checkFormat" value="$1"/>
+	     </module>
+        
     </module>
 
     <!-- Checks properties file for a duplicated properties. -->
